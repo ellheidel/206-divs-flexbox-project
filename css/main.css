@@ -11,31 +11,64 @@ body {
   background-color: rgb(253, 251, 249)
 }
 
-.wrapper {
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+header, main, footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 100px;
+}
+
+main {
+  border: rgb(71, 71, 71) solid 0.02em;
+  border-style: none none solid none; 
+  margin: 0 0 1em 0;
+}
+
+footer {
+    border: rgb(71, 71, 71) solid 0.02em;
+    border-style: solid none none none; 
+    margin: 2em 0 0 0;
+    font-size: 0.8em;
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: rgb(71, 71, 71);
   line-height: 1.5em;
-  display: inline-block;
+  width: 33%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   text-align: center;
-  padding: 3em 0 4em 0;
-  width: 30%;
 }
 
 .div-2 {
   border: rgb(71, 71, 71) solid 0.02em;
   border-style: none solid none solid;
-  padding: 3em 1em 4em 1em;
 }
 
+header {
+  font-size: 3em;
+  font-weight: 550;
+}
+
+main {
+  font-size: 1.8em;
+}
 h1 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 p {
